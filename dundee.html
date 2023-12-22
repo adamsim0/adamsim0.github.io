@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dundee Room</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/dundee-style.css">
+</head>
+
+<body class="dundee-page" id="printContent">
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="property.html">Property</a>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Rooms</a>
+            <div class="dropdown-content">
+                <a href="glasgow.html">Glasgow</a>
+                <a href="edinburgh.html">Edinburgh</a>
+                <a href="aberdeen.html">Aberdeen</a>
+                <a href="dundee.html">Dundee</a>
+            </div>
+        </div>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <!-- Centered Image and Image Label -->
+    <div class="center-container">
+        <p class="image-label">Dundee Room</p>
+		<p class="additional-text additional-description">This Is Our Amazing Twin Room!</p>
+        <img src="./images/room3.jpg" alt="Dundee Room" id="roomImage" onmouseover="changeImage()" onmouseout="resetImage()">
+		<p class="image-description">
+    Discover the allure of our Dundee Room – a captivating twin room designed for a delightful stay. Immerse yourself in comfort and style, creating lasting memories in this charming retreat.
+	</p>
+	<p class="additional-text expect-text">What You Can Expect When You Stay Here!</p>
+		<p class="additional-text">Spacious and Elegantly Decorated</p>
+		<p class="additional-text">Ensuite Bathroom with Modern Amenities</p>
+		<p class="additional-text">Comfortable Beds</p>
+		<p class="additional-text">Complimentary Wi-Fi for Staying Connected</p>
+		<p class="additional-text">HD Television For Entertainment</p>
+		<p class="additional-text">Tea and Coffee Facilities for a Comforting Brew</p>
+		<p class="additional-text">Scenic Views</p>
+		<p class="additional-text">Daily Housekeeping</p>
+		<p class="additional-text">Wardrobe/Closet</p>
+		<p class="additional-text">Hairdryer</p>
+		<p class="additional-text">Thoughtful Touches to Enhance Your Stay</p>
+    </div>
+	
+	<div class="additional-text-section">
+    <p class="additional-text">Room Price</p>
+    <p class="additional-text">Price Per Night: £100</p>
+</div>
+	<!-- ... (previous HTML content) -->
+
+<!-- Guest Policies Table -->
+<div class="guest-policies">
+    <h2>Guest Policies:</h2>
+    <table>
+        <tr>
+            <td><strong>Check-In/Check-Out:</strong></td>
+            <td>Check-in time is at 3:00 PM, and check-out is by 11:00 AM. Early check-ins and late check-outs are subject to availability and may incur additional charges.</td>
+        </tr>
+        <tr>
+            <td><strong>Smoking Policy:</strong></td>
+            <td>For the comfort of all guests, smoking is strictly prohibited in all indoor areas. Designated outdoor smoking areas are available.</td>
+        </tr>
+        <tr>
+            <td><strong>Pet-Friendly:</strong></td>
+            <td>We regret to inform you that we do not allow pets on the premises.</td>
+        </tr>
+        <tr>
+            <td><strong>Quiet Hours:</strong></td>
+            <td>Please respect quiet hours between 10:00 PM and 7:00 AM to ensure a peaceful environment for all guests.</td>
+        </tr>
+    </table>
+	<button class="print-button" onclick="printPage()">Print This Page</button>
+    </div>
+	
+	<script src="js/room4-script.js"></script>
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Violet and Jack’s Bed & Breakfast. All rights reserved.
+    </footer>
+</body>
+
+</html>

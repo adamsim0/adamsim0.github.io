@@ -1,0 +1,177 @@
+/* room-style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', Calibri;
+    background-image: url('../images/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    padding-top: 70px;
+}
+
+nav {
+    z-index: 100; /* Set a higher z-index for the navigation bar */
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.center-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+	margin-bottom: 1000px;
+}
+
+.image-label {
+    font-size: 40px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: 1100px;
+}
+
+.image-description {
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    line-height: 1.2;
+    text-align: center; /* Center the text */
+    max-width: 80%; /* Set a maximum width for the text */
+    margin-left: auto; /* Align to the center by setting left and right margins to auto */
+    margin-right: auto;
+}
+
+.additional-text {
+    color: white;
+    font-size: 25px;
+    margin: 25px 0; /* Adjust the margin for the desired gap */
+    text-align: center; /* Center the text */
+}
+.additional-text.expect-text {
+    color: #007BFF;
+}
+.expect-text {
+    font-size: 30px; /* Adjust the font size as needed */
+	font-weight: bold;
+}
+
+
+.additional-text.special {
+    margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+.additional-text-section {
+    margin-top: 70px; /* Adjust the margin-top as needed */
+	font-weight: bold;
+}
+.additional-text-section .additional-text {
+    font-size: 30px; /* Adjust the font size for "Room Price" and "Price Per Night: £90" */
+    margin: 25px 0; /* Adjust the margin for the desired gap */
+}
+
+.center-container img {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 5px;
+	height: auto;
+	
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.center-container img:hover {
+    transform: scale(1.005);
+}
+
+#ensuiteImage {
+    display: none;
+}
+
+/* Add this to your existing CSS */
+
+.guest-policies {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: Center;
+    color: white; /* Set text color to white */
+	font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px; /* Increase padding for better readability */
+    border-bottom: 1px solid #ddd;
+    color: white; /* Set text color to white */
+	font-size: 22px;
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 40px; /* Increase font size */
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Add this to your existing CSS */
+
+.print-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none; /* Remove default link underline */
+	font-weight: bold;
+}
+
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+@media print {
+    #printContent {
+        display: block !important;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

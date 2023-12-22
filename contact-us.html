@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-us-style.css">
+</head>
+
+<body class="contact-us-page">
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="property.html">Property</a>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Rooms</a>
+            <div class="dropdown-content">
+                <a href="glasgow.html">Glasgow</a>
+                <a href="edinburgh.html">Edinburgh</a>
+                <a href="aberdeen.html">Aberdeen</a>
+                <a href="dundee.html">Dundee</a>
+            </div>
+        </div>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <p class="map-label">Where Violet and Jack's Bed & Breakfast is Located!</p>
+
+     <div class="center-container">
+        <!-- Introductory Text Above Map -->
+        <p class="intro-text-above-map">Allow us to guide you to our haven of hospitality! Explore the map below to pinpoint our Ullapool location. We've chosen this picturesque spot to ensure tranquility surrounds you during your stay. The lush landscapes and serene atmosphere provide the ideal backdrop for a rejuvenating escape.</p>
+       
+	   <!-- Map Section -->
+        <div class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1260.84523146174!2d-5.160182064455918!3d57.89497046595153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488e4825bf0d89c9%3A0x18498adf8bb8d709!2sUllapool!5e0!3m2!1sen!2suk!4v1703198258739!5m2!1sen!2suk"
+                width="900"
+                height="600"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Print Map Button -->
+        <button class="print-button" onclick="printMap()">Print Map</button>
+
+        <!-- Introductory Text -->
+        <p class="intro-text">Have any questions or inquiries?</p>
+
+        <!-- Additional Text -->
+        <p class="additional-text">
+            Feel free to drop us an email. Our dedicated team is ready to assist you, ensuring that every aspect of your stay is tailored to your desires.
+        </p>
+
+        <!-- Email Button Section -->
+        <div class="email-link">
+            <a href="mailto:VioletJacksB&B@gmail.com" class="email-button">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Violet and Jack’s Bed & Breakfast. All rights reserved.
+    </footer>
+
+    <script>
+        function printMap() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+

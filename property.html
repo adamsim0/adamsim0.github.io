@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Property</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/property-style.css">
+</head>
+<body class="property-page">
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="property.html">Property</a>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Rooms</a>
+            <div class="dropdown-content">
+                <a href="glasgow.html">Glasgow</a>
+                <a href="edinburgh.html">Edinburgh</a>
+                <a href="aberdeen.html">Aberdeen</a>
+                <a href="dundee.html">Dundee</a>
+            </div>
+        </div>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <!-- Property Image with Label -->
+    <div class="property-image">
+        <p class="image-label">Take a Look at our Amazing Property!</p>
+        <img src="./images/exterior.jpg" alt="Exterior of the Property" id="exteriorImage" onmouseover="changeImage()" onmouseout="resetImage()">
+    </div>
+
+    <!-- Description of the Property -->
+    <div class="property-description">
+        <p>Our B&B's exterior is a charming blend of traditional Scottish elegance and modern comfort. Surrounded by picturesque landscapes, it invites you to a tranquil retreat. As day turns to night, soft lighting enhances the enchanting ambiance, promising a memorable stay in the Scottish Highlands.
+
+</p>
+    </div>
+
+    <!-- Facilities Section -->
+    <div class="scenic-section">
+        <h2>In The Heart Of Breathtaking Views!</h2>
+        <div class="scenic-images">
+        <img src="./images/view2.jpg" alt="Scenic View 2">
+    </div>
+</div>
+	
+	 <!-- Facilities Section -->
+    <div class="facilities-section">
+    <h2>Facilities</h2>
+
+    <!-- Cozy Lounge Area -->
+    <div class="facility-subsection">
+        <h3>Cosy Lounge</h3>
+        <img src="./images/lounge.jpg" alt="Cosy Lounge">
+        <p>Relax in our inviting lounge area, complete with comfortable seating and a warm ambiance.</p>
+    </div>
+
+    <!-- Dining Area -->
+   <div class="facility-subsection">
+    <h3>Dining Area</h3>
+    <div class="image-container">
+        <img src="./images/dining1.jpg" alt="Dining Area">
+        <img src="./images/dining2.jpg" alt="Second Dining Area Image">
+    </div>
+	 <p>Enjoy delightful meals in our charming dining area, where culinary delights meet a cozy atmosphere.</p>
+</div>
+
+    <!-- Rooms -->
+<div class="facility-subsection">
+    <h3>Amazing Atmosphere!</h3>
+    
+    <!-- Room Images Container -->
+  <!-- Room Images Container -->
+<div class="room-images-container">
+    <div class="room-row">
+        <img src="./images/room1.jpg" alt="Room 1">
+        <img src="./images/room2.jpg" alt="Room 2">
+    </div>
+    <div class="room-row">
+        <img src="./images/room3.jpg" alt="Room 3" class="large-image">
+    </div>
+</div>
+
+    <!-- Description -->
+    <div class="room-description">
+        <p>Indulge in the comfort of our well-appointed rooms, each designed for a restful stay. </p>
+    </div>
+</div>
+
+
+    <!-- Price List -->
+    <div class="facility-subsection">
+        <h3>Price List</h3>
+  
+		<div class="print-section">
+		<table>
+            <tr>
+                <th>Room</th>
+                <th>Type</th>
+                <th>Ensuite</th>
+                <th>Price per Night</th>
+            </tr>
+            <tr>
+                <td>Glasgow Room</td>
+                <td>Twin</td>
+                <td>Yes</td>
+                <td>£100</td>
+            </tr>
+            <tr>
+                <td>Edinburgh Room</td>
+                <td>Double</td>
+                <td>Yes</td>
+                <td>£120</td>
+            </tr>
+            <tr>
+                <td>Aberdeen Room</td>
+                <td>Twin</td>
+                <td>No</td>
+                <td>£90</td>
+            </tr>
+            <tr>
+                <td>Dundee Room</td>
+                <td>Double</td>
+                <td>No</td>
+                <td>£110</td>
+            </tr>
+        </table>
+		</div>
+		<button onclick="window.print()" class="print-button">Print Price List</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Violet and Jack’s Bed & Breakfast. All rights reserved.
+    </footer>
+
+    <script src="js/property-script.js"></script>
+	
+
+</body>
+</html>
+
+
+
+   

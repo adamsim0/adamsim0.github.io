@@ -1,0 +1,334 @@
+/* Add this to your existing CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', Calibri;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.property-page {
+    background-image: url('../images/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    padding-top: 70px;
+}
+
+.property-page::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.property-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.property-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 100px auto 50px;
+    height: 700px;
+    position: relative;
+}
+
+.image-label {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+#exteriorImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+#exteriorImage:hover {
+    transform: scale(1.025);
+}
+
+.property-description h2 {
+    margin-bottom: 10px;
+}
+
+.property-description {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 32px;
+    color: white;
+    max-width: 600px;
+    line-height: 1.2;
+    white-space: pre-line;
+    margin-top: -30px;
+}
+
+/* Facilities Section */
+.scenic-section h2 {
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center; /* Center the heading */
+}
+
+.scenic-images {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.scenic-images img {
+    max-width: 120%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Facilities Section */
+.facilities-section {
+    text-align: center; /* Center align text within the facilities-section */
+    padding: 20px;
+}
+
+.facilities-section h2 {
+    font-size: 45px; /* Increase font size for the Facilities heading */
+    margin-bottom: 20px; /* Increase margin bottom for better spacing */
+    color: white;
+}
+
+.facility-subsection {
+    margin-bottom: 50px;
+}
+
+
+
+/* Cozy Lounge Area */
+.facility-subsection h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px; /* Increase font size for Cozy Lounge Area heading */
+	font-family: 'Calibri', Calibri;
+}
+
+.facility-subsection img {
+    max-width: 30%; /* Adjust the max-width to make the image smaller */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.facility-subsection p {
+    font-size: 35px; /* Increase font size for the description */
+    color: white;
+	font-family: 'Calibri', Calibri;
+}
+
+/* Dining Area */
+.facility-subsection h3:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px; /* Increase font size for Dining Area heading */
+}
+
+.facility-subsection .image-container img {
+    max-width: 33%; /* Adjust the width of Dining Area images */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.facility-subsection p:nth-child(3) {
+    font-size: 30px; /* Increase font size for the description */
+    color: white;
+}
+
+/* Facilities Section */
+.facility-subsection {
+    text-align: center; /* Center align text within the facilities-section */
+    padding: 20px;
+}
+
+.facility-subsection h3 {
+    font-size: 45px; /* Increase font size for the Facilities heading */
+    margin-bottom: 20px; /* Increase margin bottom for better spacing */
+    color: white;
+}
+
+/* Room Images Container */
+.room-images-container {
+    text-align: center;
+}
+
+.room-row {
+    display: flex;
+    justify-content: center;
+	margin-bottom: 10px
+}
+
+.room-images-container img {
+    max-width: 34%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 20px; /* Add spacing between images */
+}
+
+/* Larger Image */
+.large-image {
+    max-width: 60%; /* Adjust the width of the third image */
+}
+
+/* Description */
+.room-description {
+    text-align: center;
+    margin-top: 20px; /* Add spacing between images and description */
+}
+
+.room-description p {
+    font-size: 30px; /* Adjust font size for room descriptions */
+    color: white;
+}
+
+
+
+/*Price-list */
+.facility-subsection h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 35px; /* Adjust the font size for Price List heading */
+}
+
+
+/* Adjust font size for the table in the Price List */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: white;
+    font-size: 25px; /* Increase font size for the table */
+}
+
+button.print-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px; /* Increase font size for on-screen display */
+    cursor: pointer;
+	margin-top: 20px;
+}
+
+button.print-button:hover {
+    background-color: #0056b3;
+}
+
+/* Updated @media print section with browser-specific rules */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .print-section, .print-section * {
+        visibility: visible;
+    }
+
+    .print-section {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Remove the page-break-after property for the .print-section */
+    }
+
+    /* Avoid page breaks inside and after the table */
+    table {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+
+    /* Add this rule to ensure no overflow */
+    body {
+        overflow: hidden;
+    }
+
+    /* Adjust the margin and padding of the body */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Additional browser-specific rules */
+    @media print and (-webkit-min-device-pixel-ratio:0) {
+        body {
+            /* Additional rules for WebKit-based browsers (Chrome, Safari) */
+            -webkit-print-color-adjust: exact;
+        }
+    }
+
+    .print-button {
+        display: none; /* Hide the print button in the printed version */
+    }
+
+
